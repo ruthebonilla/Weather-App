@@ -1,9 +1,12 @@
-.container {
+.card {
   width: 700px;
   padding-right: 20px;
   padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 37px;
+  box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.3);
+  background-color: rgb(196, 190, 212);
 }
 
 h1 {
@@ -38,7 +41,7 @@ img {
 
 h5 {
   font-size: 13px;
-  margin-left: 30px;
+  text-align: center;
   margin-top: 15px;
 }
 
@@ -46,9 +49,20 @@ h5 {
   position: relative;
   left: 187px;
   top: -10px;
-  font-size: 15px;
+  font-size: 17px;
   color: rgb(175, 129, 207);
 }
+
+.unitLink {
+  color: rgb(98, 108, 145);
+  font-weight: bold;
+}
+.unitLink:hover {
+  color: #2f3438;
+  font-size: 19px;
+  font-weight: bold;
+}
+
 .temp-info {
   margin-left: -20px;
   margin-top: 18px;
@@ -66,10 +80,7 @@ p#current-date {
   text-align: center;
   font-size: 16px;
 }
-.card {
-  margin-top: 37px;
-  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.3);
-  background-color: rgb(196, 190, 212);
+.card-body {
   font-family: "Comfortaa", cursive;
 }
 .form-group {
@@ -106,6 +117,7 @@ p#description {
   text-align: center;
   color: rgb(151, 108, 179);
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .sunrise-set {

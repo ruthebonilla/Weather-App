@@ -61,9 +61,6 @@ function displayWeatherInfo(response) {
   ).innerHTML = `L: ${Math.round(response.data.main.temp_min)}°`);
   let description = (document.querySelector("#description").innerHTML =
     response.data.weather[0].main);
-
-  //let sunsrise = (document.querySelector("#rise").innerHTML = new Date(response.data.sys.sunrise * 1000));
-  //let sunset = (document.querySelector("#set").innerHTML =new Date(response.data.sys.sunset * 1000));
 }
 
 function searchCity(city) {
