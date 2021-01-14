@@ -20,7 +20,7 @@ strong#temperature {
 }
 
 hr {
-  background-image: linear-gradient(90deg, #637394, #ffc1f3, #637394);
+  background-image: linear-gradient(90deg, #637394, #aa76bbcb, #637394);
   height: 1.5px;
   margin-top: 2px;
   width: 77%;
@@ -33,6 +33,7 @@ img {
   margin: 0 auto;
   width: 110px;
   padding-bottom: 20px;
+  padding-top: 35px;
 }
 
 h5 {
@@ -68,7 +69,7 @@ p#current-date {
 .card {
   margin-top: 37px;
   box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.3);
-  background: #e9e4ee;
+  background-color: rgb(196, 190, 212);
   font-family: "Comfortaa", cursive;
 }
 .form-group {
