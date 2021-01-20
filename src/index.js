@@ -43,23 +43,14 @@ function getCurrentDate(now) {
 
 function displayWeatherInfo(response) {
   document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp
-  );
-  let description = (document.querySelector("#description").innerHTML =
-    response.data.weather[0].description);
-  let humidity = (document.querySelector(
-    "#humidity"
-  ).innerHTML = `Humidity: ${response.data.main.humidity}%`);
-  let wind = (document.querySelector(
-    "#wind"
-  ).innerHTML = `Wind Speed: ${Math.round(response.data.wind.speed)} mph`);
-  let maxTemp = (document.querySelector(
-    "#max-temp"
-  ).innerHTML = `H: ${Math.round(response.data.main.temp_max)}°`);
-  let minTemp = (document.querySelector(
-    "#min-temp"
-  ).innerHTML = `L: ${Math.round(response.data.main.temp_min)}°`);
+  document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
+  let description = (document.querySelector("#description").innerHTML =response.data.weather[0].description);
+  let humidity = (document.querySelector("#humidity").innerHTML = `Humidity: ${response.data.main.humidity}%`);
+  let wind = (document.querySelector("#wind").innerHTML = `Wind Speed: ${Math.round(response.data.wind.speed)} mph`);
+  let maxTemp = (document.querySelector("#max-temp").innerHTML = `H: ${Math.round(response.data.main.temp_max)}°`);
+  let minTemp = (document.querySelector("#min-temp").innerHTML = `L: ${Math.round(response.data.main.temp_min)}°`);
+  let iconElement =document.querySelector("#icon").setAttribute("src", `http://openweathermap.org/img/wn/${response
+.data.weather[0].icon}@2x.png`);
 
   celsiusTemperature = response.data.main.temp;
 }
