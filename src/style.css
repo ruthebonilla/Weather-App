@@ -16,10 +16,9 @@ h1 {
 
 strong#temperature {
   position: relative;
-
   left: 185px;
-  top: 17px;
-  font-size: 50px;
+  top: 15px;
+  font-size: 52px;
 }
 
 hr {
@@ -47,27 +46,33 @@ h5 {
 
 .units {
   position: relative;
-  left: 187px;
-  top: -10px;
-  font-size: 17px;
+  left: 182px;
+  bottom: 10px;
+  font-size: 16px;
   color: rgb(175, 129, 207);
 }
 
 .unitLink {
-  color: rgb(98, 108, 145);
+  color: #212529;
   font-weight: bold;
 }
 .unitLink:hover {
   color: #2f3438;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: bold;
+}
+.units .active {
+  color: #6b7498;
+  font-style: italic;
+  font-size: 19px;
+  text-decoration: none;
 }
 
 .temp-info {
   margin-left: -20px;
   margin-top: 18px;
   list-style-type: circle;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 p.greeting {
