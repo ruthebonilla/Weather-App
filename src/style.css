@@ -27,7 +27,7 @@ hr {
   margin-top: 2px;
   width: 77%;
 }
-img {
+img#icon {
   display: block;
   position: relative;
   right: -3px;
@@ -62,7 +62,7 @@ h5 {
   font-weight: bold;
 }
 .units .active {
-  color: #6b7498;
+  color: #545e85;
   font-style: italic;
   font-size: 19px;
   text-decoration: none;
@@ -125,22 +125,28 @@ p#description {
   margin-bottom: 10px;
 }
 
-.sunrise-set {
-  text-align: center;
-  margin-top: -10px;
-}
 
 ul.hourly-forecast {
   display: block;
   margin: 0 auto;
-  text-align: center;
-  font-size: 17px;
-  column-count: 7;
+  column-count: 1;
+  font-size: 14px;
   list-style-type: none;
-  margin-top: -50px;
-  padding: 0;
+  margin-top: -55px;
+  margin-bottom: -3px;
+  padding-left: 10px;
+  margin-left: 8px;
 }
 
-.fas {
-  font-size: 23px;
+img#forecastIcon {
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+  padding: 0;
+  margin-left: -13px;
+  margin-bottom: -5px;
+  margin-top: -5px;
+}
+strong.degrees {
+  color: #545e85;
 }
