@@ -102,9 +102,10 @@ function displayForecast(response) {
             forecast.weather[0].icon
           }@2x.png"
         />
-       <strong class="degrees">${Math.round(
-         forecast.main.temp_max
-       )}°</strong>&nbsp;${Math.round(forecast.main.temp_min)}°
+       <strong class="maxDegree">
+       ${Math.round(forecast.main.temp_max)}°
+         </strong>
+         &nbsp;<span class="minDegree">${Math.round(forecast.main.temp_min)}°</span>
       </li>
     </div>
     </ul>
@@ -123,7 +124,7 @@ function searchCity(city) {
 
 function submitCity(event) {
   event.preventDefault();
-  let city = document.querySelector("#cityDisplay");
+  let city =document.querySelector("#cityDisplay");
   searchCity(city.value);
 }
 

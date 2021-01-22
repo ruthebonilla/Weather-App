@@ -5,24 +5,26 @@
   margin-right: auto;
   margin-left: auto;
   margin-top: 37px;
-  box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.3);
-  background-color: rgb(196, 190, 212);
+  box-shadow: 0 4px 9px 0 rgba(56, 55, 55, 0.5);
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4a0ecb2e-f513-4d54-8eda-88da38fefef9/dcotosp-79c1a8c8-ce0d-4d1f-8f7d-779f81e4cd93.png/v1/fill/w_1024,h_768,q_80,strp/desert_hills_by_xxhidekanexx_dcotosp-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD03NjgiLCJwYXRoIjoiXC9mXC80YTBlY2IyZS1mNTEzLTRkNTQtOGVkYS04OGRhMzhmZWZlZjlcL2Rjb3Rvc3AtNzljMWE4YzgtY2UwZC00ZDFmLThmN2QtNzc5ZjgxZTRjZDkzLnBuZyIsIndpZHRoIjoiPD0xMDI0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.dN8p9GWkAqTMqYkDxb1QMJJ7-8LF3Ri7zipUr_e_swk");
+  background-clip: padding-box;
+  border-radius: 3%;
 }
 
 h1 {
   text-align: center;
-  font-size: 45px;
+  font-size: 47px;
 }
 
 strong#temperature {
   position: relative;
-  left: 185px;
-  top: 15px;
-  font-size: 52px;
+  left: 176px;
+  top: 24px;
+  font-size: 60px;
 }
 
 hr {
-  background-image: linear-gradient(90deg, #637394, #aa76bbcb, #637394);
+  background-image: linear-gradient(90deg, #536588, #aa76bbcb, #536588);
   height: 1.5px;
   margin-top: 2px;
   width: 77%;
@@ -31,10 +33,10 @@ img#icon {
   display: block;
   position: relative;
   right: -3px;
-  bottom: 45px;
+  bottom: 59px;
   margin: 0 auto;
-  width: 110px;
-  padding-bottom: 20px;
+  width: 130px;
+  padding-bottom: 11px;
   padding-top: 35px;
 }
 
@@ -46,10 +48,10 @@ h5 {
 
 .units {
   position: relative;
-  left: 182px;
-  bottom: 10px;
+  left: 175px;
+  bottom: 9px;
   font-size: 16px;
-  color: rgb(175, 129, 207);
+  color: #a885bd;
 }
 
 .unitLink {
@@ -57,19 +59,18 @@ h5 {
   font-weight: bold;
 }
 .unitLink:hover {
-  color: #2f3438;
+  color: #463853;
   font-size: 18px;
   font-weight: bold;
 }
 .units .active {
-  color: #545e85;
   font-style: italic;
   font-size: 19px;
   text-decoration: none;
 }
 
 .temp-info {
-  margin-left: -20px;
+  margin-left: -14px;
   margin-top: 18px;
   list-style-type: circle;
   font-size: 16px;
@@ -83,7 +84,7 @@ p.greeting {
 
 p#current-date {
   text-align: center;
-  font-size: 16px;
+  font-size: 17px;
 }
 .card-body {
   font-family: "Comfortaa", cursive;
@@ -96,7 +97,7 @@ p#current-date {
 }
 
 .btn-search {
-  margin-left: 8px;
+  margin-left: 22px;
   background: #af95c7;
   border-color: #ffff;
   padding-left: 19px;
@@ -120,22 +121,23 @@ p#current-date {
 
 p#description {
   text-align: center;
-  color: rgb(151, 108, 179);
+  color: #a885bd;
   font-size: 20px;
   margin-bottom: 10px;
+  text-shadow: rgb(0, 0, 0) 0px 0px 12px;
 }
-
 
 ul.hourly-forecast {
   display: block;
   margin: 0 auto;
   column-count: 1;
-  font-size: 14px;
+  font-size: 16px;
   list-style-type: none;
   margin-top: -55px;
   margin-bottom: -3px;
   padding-left: 10px;
   margin-left: 8px;
+  text-shadow: rgb(255, 255, 255) 0px 0px 20px;
 }
 
 img#forecastIcon {
@@ -147,6 +149,12 @@ img#forecastIcon {
   margin-bottom: -5px;
   margin-top: -5px;
 }
-strong.degrees {
-  color: #545e85;
+strong.maxDegree {
+  font-size: 15px;
+  text-shadow: none;
+  color: #1e1f22;
+}
+span.minDegree {
+  font-size: 14px;
+  text-shadow: none;
 }
