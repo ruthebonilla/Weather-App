@@ -105,7 +105,9 @@ function displayForecast(response) {
        <strong class="maxDegree">
        ${Math.round(forecast.main.temp_max)}°
          </strong>
-         &nbsp;<span class="minDegree">${Math.round(forecast.main.temp_min)}°</span>
+         &nbsp;<span class="minDegree">${Math.round(
+           forecast.main.temp_min
+         )}°</span>
       </li>
     </div>
     </ul>
@@ -124,7 +126,7 @@ function searchCity(city) {
 
 function submitCity(event) {
   event.preventDefault();
-  let city =document.querySelector("#cityDisplay");
+  let city = document.querySelector("#cityDisplay");
   searchCity(city.value);
 }
 
@@ -133,6 +135,9 @@ function searchLocation(position) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
 
   axios.get(apiUrl).then(displayWeatherInfo);
+
+  let locationForecastUrl = `http://api.openweathermap.org/data/2.5/forecast?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  axios.get(locationForecastUrl).then(displayForecast);
 }
 
 function getCurrentLocation(event) {
